@@ -85,6 +85,7 @@ Partial Class LoginForm1
         '
         'OK
         '
+        Me.OK.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.OK.Location = New System.Drawing.Point(197, 161)
         Me.OK.Name = "OK"
         Me.OK.Size = New System.Drawing.Size(94, 23)
@@ -107,6 +108,7 @@ Partial Class LoginForm1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.Cancel
         Me.ClientSize = New System.Drawing.Size(401, 192)
+        Me.ControlBox = False
         Me.Controls.Add(Me.Cancel)
         Me.Controls.Add(Me.OK)
         Me.Controls.Add(Me.PasswordTextBox)
@@ -114,6 +116,7 @@ Partial Class LoginForm1
         Me.Controls.Add(Me.PasswordLabel)
         Me.Controls.Add(Me.UsernameLabel)
         Me.Controls.Add(Me.LogoPictureBox)
+        Me.Cursor = System.Windows.Forms.Cursors.Hand
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.MinimizeBox = False

@@ -23,23 +23,33 @@ Partial Class mainOutputForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.outputFormPublic = New System.Windows.Forms.RichTextBox()
+        Me.outputMajorCost = New System.Windows.Forms.RichTextBox()
         Me.SuspendLayout()
         '
         'outputFormPublic
         '
         Me.outputFormPublic.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.outputFormPublic.ForeColor = System.Drawing.Color.Red
-        Me.outputFormPublic.Location = New System.Drawing.Point(59, 51)
+        Me.outputFormPublic.ForeColor = System.Drawing.Color.Black
+        Me.outputFormPublic.Location = New System.Drawing.Point(59, 28)
         Me.outputFormPublic.Name = "outputFormPublic"
         Me.outputFormPublic.Size = New System.Drawing.Size(339, 164)
         Me.outputFormPublic.TabIndex = 1
         Me.outputFormPublic.Text = ""
         '
+        'outputMajorCost
+        '
+        Me.outputMajorCost.Location = New System.Drawing.Point(59, 234)
+        Me.outputMajorCost.Name = "outputMajorCost"
+        Me.outputMajorCost.Size = New System.Drawing.Size(339, 83)
+        Me.outputMajorCost.TabIndex = 2
+        Me.outputMajorCost.Text = ""
+        '
         'mainOutputForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(453, 281)
+        Me.ClientSize = New System.Drawing.Size(453, 343)
+        Me.Controls.Add(Me.outputMajorCost)
         Me.Controls.Add(Me.outputFormPublic)
         Me.Name = "mainOutputForm"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -48,4 +58,5 @@ Partial Class mainOutputForm
 
     End Sub
     Friend WithEvents outputFormPublic As RichTextBox
+    Friend WithEvents outputMajorCost As RichTextBox
 End Class
